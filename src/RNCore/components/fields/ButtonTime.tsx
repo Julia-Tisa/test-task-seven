@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import styles from '../../../styles/timeComponent';
+import buttonStyle from '../../../styles/button';
 
 interface IButtonTime {
     side: string,
@@ -9,7 +9,7 @@ interface IButtonTime {
 
 export function Button(props: IButtonTime) {
   return (
-    <button style={styles.buttonStyle} onClick={props.onClick}>
+    <button style={buttonStyle} onClick={props.onClick}>
       <FontAwesomeIcon icon={props.side === 'left' ? faAngleLeft : faAngleRight} />
     </button>
   );

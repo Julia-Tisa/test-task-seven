@@ -2,7 +2,7 @@ import { TextInput } from 'react-native';
 import tw from '../../libs/tailwind';
 import { useState } from 'react';
 import { Button } from './ButtonTime';
-import styles from '../../../styles/timeComponent';
+import containerStyle from '../../../styles/container';
 
 interface ITimeField {
   class?: string // tailwind classes
@@ -73,8 +73,8 @@ export function FieldTime(props: ITimeField) {
     setTime(currentTime.toString().slice(16, 21));
   };
   
-  return ( 
-    <div style={styles.containerStyle}>
+  return (
+    <div style={containerStyle}>
       {props.useButtons && <Button side={'left'} onClick={handleDecrementHour} />}
       <TextInput
         onBlur={handleBlur}

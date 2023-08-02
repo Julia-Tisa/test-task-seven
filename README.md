@@ -41,6 +41,3 @@ https://tailwindcss.ru/
 
 https://fontawesome.com/docs/web/use-with/react-native
 
-# приемка задания
-
-Выполненное задание залить на отдельную ветку. Где имя ветки - фамилия исполнителя
